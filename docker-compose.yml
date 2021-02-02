@@ -1,0 +1,11 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  etl:
+    build: .
+    image: fun-etl/airflow
+    ports:
+      - "8080:8080"
+    # command: airflow webserver
+    volumes:
+      - $PWD/src:/opt/src
+      # - logvolume01:/var/log
