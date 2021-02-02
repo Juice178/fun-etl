@@ -6,7 +6,6 @@ authors = ["Kenta <kentasuzuki5555@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.8.5"
-apache-airflow = "2.0.0"
 
 [tool.poetry.dev-dependencies]
 

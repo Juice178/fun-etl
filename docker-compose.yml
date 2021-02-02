@@ -5,7 +5,7 @@ services:
     image: fun-etl/airflow
     ports:
       - "8080:8080"
-    command: /bin/bash
+    # command: airflow webserver
     volumes:
       - $PWD/src:/opt/src
       # - logvolume01:/var/log
