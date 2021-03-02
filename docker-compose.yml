@@ -7,7 +7,10 @@ services:
       - "8080:8080"
     # command: airflow webserver
     volumes:
-      - $PWD/src:/opt/src:ro
+      # - $PWD/src/airflow/airflow.cfg:/opt/src/airflow.cfg:ro
+      # - $PWD/src/airflow/unittests.cfg:/opt/src/unittests.cfg:ro
+      # - $PWD/src/airflow/webserver_config.py:/opt/src/unittests.cfg:ro
+      - $PWD/src/airflow:/opt/src/airflow
       # - logvolume01:/var/log
     # environment:
     #  - AIRFLOW_HOME=/opt/src
